@@ -50,7 +50,7 @@ public abstract class Llamadas {
 
     // toString
     public String toString() {
-        return "Origen: " + this.numOrigen.getNumTelef() + "\nDestino: " + this.numDestino.getNumTelef() + "\nDuración: " + this.secDuracion / 60 + "\nImporte: " + this.importe;
+        return "Origen: " + this.numOrigen.getNumTelef() + "\nDestino: " + this.numDestino.getNumTelef() + "\nDuración: " + this.secDuracion / 60 + "\nImporte: " + this.importe / 100;
     }
 
     // Metodos

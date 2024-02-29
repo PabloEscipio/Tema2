@@ -26,6 +26,7 @@ public class Locales extends Llamadas {
     }
 
     // Metodos
+    @Override
     public void calculaImporte() {
         super.importe = super.secDuracion * this.tarifa;
     }

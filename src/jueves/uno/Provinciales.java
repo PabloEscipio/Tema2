@@ -31,8 +31,9 @@ public class Provinciales extends Llamadas {
         return listFranjas;
     }
 
-    public void setListFranjas(ArrayList<Short> listFranjas) {
-        this.listFranjas = listFranjas;
+    public void setListFranjas(int pIndex, short pTarifa) {
+        this.listFranjas.remove(pIndex);
+        this.listFranjas.add(pIndex, pTarifa);
     }
 
     // toString
@@ -41,6 +42,7 @@ public class Provinciales extends Llamadas {
     }
 
     // Metodos
+    @Override
     public void calculaImporte() {
         super.importe = this.secDuracion * this.listFranjas.get(this.franja - 1);
     }
